@@ -28,7 +28,6 @@ function onStartButtonClick() {
   refs.startBtn.disabled = true;
     intervalId = setInterval(() => {
         const num = randomIntegerFromInterval(0, colors.length);
-
         refs.body.setAttribute("style", `background-color:${colors[num]}`)
     }, 1000);
 };
